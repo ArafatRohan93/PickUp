@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "864389891697",
+    "firebase_url": "https://fluttersocial-3c8e7.firebaseio.com",
+    "project_id": "fluttersocial-3c8e7",
+    "storage_bucket": "fluttersocial-3c8e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864389891697:android:e6628e319433759590bdd0",
+        "android_client_info": {
+          "package_name": "com.rohanarafat.fluttershare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "864389891697-fi893pa22gblepciea7eh081pdj807bn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rohanarafat.fluttershare",
+            "certificate_hash": "17b82ebe61314f0a7b302d9d0c3d912f93737093"
+          }
+        },
+        {
+          "client_id": "864389891697-pqpoq6e8lmmh63hpdbve0a27rmuc86g6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZCQndT6qpymW5Ya-1fatlPCTUjSExxwk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "864389891697-pqpoq6e8lmmh63hpdbve0a27rmuc86g6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
