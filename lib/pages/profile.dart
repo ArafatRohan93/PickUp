@@ -44,13 +44,14 @@ class _ProfileState extends State<Profile> {
      );
   }
 
-  editProfile(){
+  editProfile() {
     Navigator.push(
       context,
       MaterialPageRoute(
         builder: (context) => EditProfile(currentUserId : currentUserId)
       )
     );
+   
   }
 
   buildButton({String text, Function function}){
