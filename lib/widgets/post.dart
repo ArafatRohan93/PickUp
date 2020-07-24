@@ -64,14 +64,14 @@ class Post extends StatefulWidget {
 }
 
 class _PostState extends State<Post> {
-   String postId;
-   String ownerId;
-   String username;
-   String location;
-   String description;
-   String mediaUrl;
-   Map likes;
-   int likesCount;
+   final String postId;
+  final String ownerId;
+  final String username;
+  final String location;
+  final String description;
+  final String mediaUrl;
+  int likesCount;
+  Map likes;
 
    _PostState(
       {

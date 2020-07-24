@@ -28,13 +28,14 @@ class _ProfileState extends State<Profile> {
     // TODO: implement initState
     super.initState();
     getProfilePosts();
+    print("get profile post executed");
   }
 
   getProfilePosts() async{
     setState(() {
       isLoading = true;
     });
-    QuerySnapshot snapshot = await userRef.document(widget.profileId)
+    QuerySnapshot snapshot = await postsRef.document(widget.profileId)
     .collection('userPosts')
     .orderBy('timestamp', descending: true)
     .getDocuments();
@@ -217,10 +218,8 @@ class _ProfileState extends State<Profile> {
       body: ListView(
         children: <Widget>[
           buildProfileHeader(),
-          Divider(
-            height: 0.0,
-            ),
-            buildProfilePosts(),
+          Divider(height: 0.0),
+          buildProfilePosts(),
         ],
       ),
     );
