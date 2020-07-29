@@ -123,6 +123,9 @@ class _ProfileState extends State<Profile> {
         function: editProfile
       );
     }
+    else{
+      return Text("Follow Button");
+    }
   }
 
   buildProfileHeader(){
@@ -152,7 +155,7 @@ class _ProfileState extends State<Profile> {
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: <Widget>[
-                            buildCountColumn("posts", 0),
+                            buildCountColumn("posts", postCount),
                             buildCountColumn("followers", 0),
                             buildCountColumn("following", 0),
                           ],
