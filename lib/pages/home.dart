@@ -50,14 +50,14 @@ class _HomeState extends State<Home> {
     googleSignIn.onCurrentUserChanged.listen((account) {
       handleSignIn(account);
     }, onError: (err) {
-      print("Sign In error : $err");
+      //print("Sign In error : $err");
     });
     //Reauthenticate when user reopen the app
     googleSignIn
         .signInSilently(suppressErrors: false)
         .then((account) => handleSignIn(account))
         .catchError((err) {
-      print(err);
+      //print(err);
     });
   }
 
@@ -78,7 +78,7 @@ class _HomeState extends State<Home> {
     } else {
       setState(() {
         isAuth = false;
-        print("Inside else");
+       // print("Inside else");
       });
     }
   }
@@ -88,7 +88,7 @@ class _HomeState extends State<Home> {
     if(Platform.isIOS) getiOSPermission();
 
     _firebaseMessaging.getToken().then((token){
-      print('Firebase3 messaging token : $token\n');
+     // print('Firebase3 messaging token : $token\n');
       userRef
       .document(user.id)
       .updateData({"androidNotificationToken": token});
@@ -98,11 +98,11 @@ class _HomeState extends State<Home> {
       // onLaunch: (Map<String, dynamic> message) async{},
       // onResume: (Map<String, dynamic> message) async{},
       onMessage: (Map<String, dynamic> message) async{
-        print("On message: $message \n");
+        //print("On message: $message \n");
         final String recipientId = message['data']['recipient'];
         final String body = message['notification']['body'];
          if (recipientId == user.id) {
-          print("Notification shown!");
+          //print("Notification shown!");
           SnackBar snackbar = SnackBar(
               content: Text(
             body,
@@ -111,7 +111,7 @@ class _HomeState extends State<Home> {
           _scaffoldKey.currentState.showSnackBar(snackbar);
         }
         else{
-          print("Notification NOT shown");
+          //("Notification NOT shown");
         }
         
       },
@@ -121,7 +121,7 @@ class _HomeState extends State<Home> {
    getiOSPermission(){
      _firebaseMessaging.requestNotificationPermissions(IosNotificationSettings(alert: true, badge: true, sound: true));
      _firebaseMessaging.onIosSettingsRegistered.listen((settings){
-       print("Setting registered: $settings");
+       //print("Setting registered: $settings");
      });
    }
 
@@ -158,8 +158,8 @@ class _HomeState extends State<Home> {
     }
     currentUser = User.fromDocument(doc);
 
-    print(currentUser);
-    print(currentUser.displayName);
+    //print(currentUser);
+    //print(currentUser.displayName);
   }
 
   login() {
@@ -249,7 +249,7 @@ class _HomeState extends State<Home> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Text(
-              'FlutterSocial',
+              'PikUp',
               style: TextStyle(
                 fontFamily: "Signatra",
                 fontSize: 90.0,

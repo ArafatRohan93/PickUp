@@ -349,7 +349,7 @@ class _PostState extends State<Post> {
             Container(
               margin: EdgeInsets.only(left: 20.0),
               child: Text(
-                "$username",
+                "$username ",
                 style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,

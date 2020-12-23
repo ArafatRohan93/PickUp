@@ -171,7 +171,7 @@ class _UploadState extends State<Upload> with AutomaticKeepAliveClientMixin<Uplo
     List<Placemark> placemarks = await Geolocator().placemarkFromCoordinates(position.latitude, position.longitude);
     Placemark placemark = placemarks[0];
     String completeAddress = '${placemark.thoroughfare} ${placemark.subThoroughfare} ${placemark.locality} ${placemark.subLocality} ${placemark.administrativeArea} ${placemark.subAdministrativeArea} ${placemark.postalCode} ${placemark.isoCountryCode} ${placemark.country} ';
-    print(completeAddress);
+    //print(completeAddress);
     String formattedAddress =  "${placemark.locality}, ${placemark.country}";
     locationConttroller.text = formattedAddress;
   }

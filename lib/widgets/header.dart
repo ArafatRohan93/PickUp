@@ -4,7 +4,7 @@ AppBar header(context, {bool isAppTitle = false, String titleText, bool hideBack
   return AppBar(
     automaticallyImplyLeading: hideBackButton ? false : true,
     title: Text(
-        isAppTitle ? 'FlutterSocial' : titleText,
+        isAppTitle ? 'PikUp' : titleText,
       style: TextStyle(
         color: Colors.white,
         fontFamily: isAppTitle ? "Signatra" : "",
