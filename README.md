@@ -3,7 +3,7 @@
 
 ## Goal
 
-The goal of this project is to create a social network application using flutter and firebase. This project is created following a course on popular site Udemy (![Course](https://www.udemy.com/course/build-a-social-network-with-flutter-and-firebase/)).
+The goal of this project is to create a social network application using flutter and firebase. This project is created following a course on popular site Udemy ([Course](https://www.udemy.com/course/build-a-social-network-with-flutter-and-firebase/)).
 
 ## Features
 
